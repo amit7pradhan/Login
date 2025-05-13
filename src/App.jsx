@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from "./images/logo.png"
 
 function App() {
   const [isOTP, setIsOTP] = useState(false);
@@ -75,7 +76,7 @@ function App() {
 
   return (
     <div className="container">
-      <img src="./src/assets/logo.png" alt="Logo" className="logo" />
+      <img src={logo} alt="Logo" className="logo" />
       <h1>Login</h1>
 
       <div className="toggle-container">
